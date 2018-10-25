@@ -25,9 +25,21 @@ body {
 	background-size: cover;
 }
 
+.jumbotronOther {
+	padding-top: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	min-height: 300px;
+}
+
 .jumbotron h1 {
 	text-align: center;
 	font-family: spectralFont;
+}
+
+.jumbotronOther h1{
+	font-family: spectralFont;
+	text-align: center;
 }
 
 .container {
