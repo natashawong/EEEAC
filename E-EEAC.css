@@ -16,24 +16,24 @@ body {
 .mainPage {
 	padding-left: 150px;
 	padding-right: 150px;
-	padding-top: 100px;
+	/* padding-top: 100px; */
 }
 
 .navbar {
 	/* background-color: #2E424C; */
-	/* background-color: #001B31; winner + bgPic.jpg*/
+	background-color: #001B31
 	/* background-color: #183144; */
 	/* background-color: #3F5E7A; */
 	
 	/*option2 + bgPic2.png*/
-	background-color: #222f28;
+	/* background-color: #222f28; */
 }
 
 .jumbotron {
 	padding-left: 20px;
 	padding-right: 20px;
 	min-height: 450px;
-	background-image: url(../EEEAC/bootstrap-3.3.7/assets/bgPic7.jpg);
+	background-image: url(../EEEAC/bootstrap-3.3.7/assets/bgPic.jpg);
 	background-size: cover;
 	background-position: 0%;
 }
@@ -71,7 +71,7 @@ body {
 
 .container h2 {
 	font-family: latoFont;
-	color: #222f28;
+	color: #001B31;
 }
 
 ul {
@@ -94,7 +94,7 @@ li a {
 
 .button-row a {
 	/* background-color: #001B31; */
-	background-color: #222f28;
+	background-color: #001B31;
 	color: white;
 	margin: 30px;
 	border-radius: 0;
