@@ -10,10 +10,6 @@ from .forms import SearchForm, AddForm
 def home():
     return render_template('index.html')
 
-@app.route('/delete/<name>')
-def about(name):
-    return redirect(url_for('homeBL'))
-
 # %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*
 # %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%           ABOUT US          %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*
 # %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*
@@ -21,7 +17,7 @@ def about(name):
 tempAddData = []
 @app.route('/about')
 def about():
-    return render_template('about.html', form=form, data=tempAddData)
+    return render_template('about.html')
 
 @app.route('/ExecutiveBoard')
 def executiveBoard(name):
@@ -31,12 +27,20 @@ def executiveBoard(name):
 def reviewCommittees(name):
     return redirect(url_for('reviewCommittees.html'))
 
+@app.route('/Disclosure')
+def disclosure(name):
+    return redirect(url_for('disclosure.html'))
+
+@app.route('/Structure')
+def structure(name):
+    return redirect(url_for('structure.html'))
+
 # %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*
 # %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%           CONTACT US          %*%*%*%*%*%*%*%*%*%*%*%*%*%*
 # %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*
 
-@app.route('/ContactUs')
-def commit():
+@app.route('/Contact')
+def contact():
     return redirect(url_for('Contact.html'))
 
 # %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*
@@ -44,7 +48,7 @@ def commit():
 # %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*
 
 @app.route('/Reports')
-def commit():
+def reports():
     return redirect(url_for('reports.html'))
 
 # %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*
