@@ -61,6 +61,7 @@ body {
 	padding-right: 20px;
 	font-family: merriweatherFont;
 	width: 100%;
+	align-content: left;
 }
 
 .container .col-md {
@@ -84,13 +85,10 @@ li a {
 	float: right;
 }
 
-.row {
-	align-self: center;
-}
-
 .button-row {
 	padding-top: 60px;
 	padding-bottom: 25px;
+	width: 100%;
 	align-content: center;
 }
 
