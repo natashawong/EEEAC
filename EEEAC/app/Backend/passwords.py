@@ -1,0 +1,3 @@
+passwords = {
+    "postgres": [{"dragon"}]
+}
