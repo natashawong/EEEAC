@@ -1,11 +1,11 @@
 @font-face {
-	font-family: spectralFontBold;
-	src: url(../EEEAC/bootstrap-3.3.7/assets/Spectral/Spectral-Bold.ttf)
+	font-family: latoFont;
+	src: url(../EEEAC/bootstrap-3.3.7/assets/Lato/Lato-Regular.ttf)
 }
 
 @font-face {
-	font-family: spectralFont;
-	src: url(../EEEAC/bootstrap-3.3.7/assets/Spectral/Spectral-Medium.ttf)
+	font-family: merriweatherFont;
+	src: url(../EEEAC/bootstrap-3.3.7/assets/Merriweather/Merriweather-Regular.ttf)
 }
 
 body {
@@ -13,16 +13,29 @@ body {
 	padding-bottom: 20px;
 }
 
+.mainPage {
+	padding-left: 150px;
+	padding-right: 150px;
+	padding-top: 100px;
+}
+
 .navbar {
-	background-color: black;
+	/* background-color: #2E424C; */
+	/* background-color: #001B31; winner + bgPic.jpg*/
+	/* background-color: #183144; */
+	/* background-color: #3F5E7A; */
+	
+	/*option2 + bgPic2.png*/
+	background-color: #222f28;
 }
 
 .jumbotron {
 	padding-left: 20px;
 	padding-right: 20px;
-	min-height: 300px;
-	background-image: url(../EEEAC/bootstrap-3.3.7/assets/bgPic.jpeg);
+	min-height: 450px;
+	background-image: url(../EEEAC/bootstrap-3.3.7/assets/bgPic7.jpg);
 	background-size: cover;
+	background-position: 0%;
 }
 
 .jumbotronOther {
@@ -34,34 +47,36 @@ body {
 
 .jumbotron h1 {
 	text-align: center;
-	font-family: spectralFont;
+	font-family: latoFont;
+	color: #222f28;
 }
 
 .jumbotronOther h1{
-	font-family: spectralFont;
+	font-family: latoFont;
 	text-align: center;
 }
 
 .container {
 	padding-left: 20px;
 	padding-right: 20px;
-	font-family: spectralFont;
-	text-align: center;
+	font-family: merriweatherFont;
 	width: 100%;
 }
 
 .container .col-md {
 	padding: 10px;
+	align-content: left;
 }
 
 .container h2 {
-	font-family: spectralFontBold;
+	font-family: latoFont;
+	color: #222f28;
 }
 
 ul {
 	list-style-type: none;
 	background-color: grey;
-	font-family: spectralFont;
+	font-family: latoFont;
 }
 
 li a {
@@ -76,13 +91,15 @@ li a {
 .button-row {
 	padding-top: 60px;
 	padding-bottom: 25px;
-	width: 100%;
+	align-content: center;
 }
 
 .button-row a {
-	background-color: black;
+	/* background-color: #001B31; */
+	background-color: #222f28;
 	color: white;
 	margin: 30px;
 	border-radius: 0;
 	padding: 20px;
+	font-family: latoFont;
 }
