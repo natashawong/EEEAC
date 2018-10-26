@@ -1,6 +1,4 @@
 import pg8000
-import passwords from app.passwords
-from app.envirionments import ENVIRONMENTS
 
 db = {
 "DB_HOST" : "localhost",
