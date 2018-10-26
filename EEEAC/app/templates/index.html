@@ -12,7 +12,7 @@
     <title>E-EEAC Website - Home</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="./bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="./bootstrap-3.3.7/docs/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -35,10 +35,23 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <ul>
           <a class="navbar-brand" href="#">E-EEAC</a>
-          <li><a class="btn btn-lg" href="Contact.html" role="button">Contact Us</a></li>
-          <li><a class="btn btn-lg" href="CommitteeMembers.html" role="button">Committee Members</a></li>
-          <li><a class="btn btn-lg" href="Research.html" role="button">Research</a></li>
-          <li><a class="btn btn-lg" href="Home.html" role="button">Home</a></li>
+          <li><a class="btn btn-lg" href={{ url_for('contact' )}}  role="button">Contact Us</a></li>
+          <li class="nav-item">
+            <div class="dropdown-menu">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">About Us</a>
+              <a class="dropdown-item" href= {{ url_for('executiveboard' )}} role="button">Executive Board</a>
+              <a class="dropdown-item" href= {{ url_for('reviewcommittee' )}} role="button">Review Committee</a>
+            </div>
+          </li>
+          <li class="nav-item">
+              <div class="dropdown-menu">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">Policy and Procedures</a>
+                <a class="dropdown-item" href= {{ url_for('disclosure' )}} role="button">Disclosure</a>
+                <a class="dropdown-item" href= {{ url_for('structure' )}} role="button">Structure</a>
+              </div>
+          </li>
+          <li><a class="btn btn-lg" href={{ url_for('reports' )}}  role="button">Reports</a></li>
+          <li><a class="btn btn-lg" href={{ url_for('home' )}}  role="button">Home</a></li>
         </ul>
     </nav>
 
