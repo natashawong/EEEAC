@@ -1,11 +1,11 @@
 @font-face {
 	font-family: latoFont;
-	src: url(../../../bootstrap-3.3.7/assets/Lato/Lato-Regular.ttf)
+	src: url(../../bootstrap-3.3.7/assets/Lato/Lato-Regular.ttf)
 }
 
 @font-face {
 	font-family: merriweatherFont;
-	src: url(../../../bootstrap-3.3.7/assets/Merriweather/Merriweather-Regular.ttf)
+	src: url(../../bootstrap-3.3.7/assets/Merriweather/Merriweather-Regular.ttf)
 }
 
 body {
@@ -26,7 +26,7 @@ body {
 	padding-left: 20px;
 	padding-right: 20px;
 	min-height: 450px;
-	background-image: url(../../../bootstrap-3.3.7/assets/bgPic.jpg);
+	background-image: url(../../bootstrap-3.3.7/assets/bgPic.jpg);
 	background-size: cover;
 	background-position: 0%;
 }
