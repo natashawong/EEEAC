@@ -14,19 +14,12 @@ body {
 }
 
 .mainPage {
-	padding-left: 150px;
-	padding-right: 150px;
-	/* padding-top: 100px; */
+	padding-left: 200px;
+	padding-right: 200px;
 }
 
 .navbar {
-	/* background-color: #2E424C; */
 	background-color: #001B31
-	/* background-color: #183144; */
-	/* background-color: #3F5E7A; */
-	
-	/*option2 + bgPic2.png*/
-	/* background-color: #222f28; */
 }
 
 .jumbotron {
@@ -40,8 +33,8 @@ body {
 
 .jumbotronOther {
 	padding-top: 30px;
-	padding-left: 20px;
 	padding-right: 20px;
+	padding-bottom: 20px;
 }
 
 .jumbotron h1 {
@@ -52,7 +45,7 @@ body {
 
 .jumbotronOther h1{
 	font-family: latoFont;
-	text-align: center;
+	text-align: left;
 }
 
 .container {
@@ -108,4 +101,31 @@ li a {
 	border-radius: 0;
 	padding: 20px;
 	font-family: latoFont;
+}
+
+.headerOther {
+	padding-bottom: 15px;
+}
+
+.bigBioContainer {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 30px;
+	padding: 10px;
+	align-content: center;
+	padding-bottom: 50px;
+}
+
+.individualBioContainer {
+	display: grid;
+    grid-template-rows: auto auto;
+    grid-gap: 15px;
+	padding: 10px;
+	align-content: center;
+	text-align: center;
+}
+
+.bioImage {
+	max-width: 300px;
+	max-height: 300px;
 }
