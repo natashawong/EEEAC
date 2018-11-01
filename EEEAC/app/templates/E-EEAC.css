@@ -42,7 +42,6 @@ body {
 	padding-top: 30px;
 	padding-left: 20px;
 	padding-right: 20px;
-	min-height: 300px;
 }
 
 .jumbotron h1 {
@@ -64,8 +63,18 @@ body {
 	align-content: left;
 }
 
+.containerOther {
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: merriweatherFont;
+	width: 100%;
+	align-content: left;
+	padding-bottom: 50px;
+	padding-top: 10px;
+}
+
 .container .col-md {
-	padding: 10px;
+	padding-top: 10px;
 	align-content: left;
 }
 
@@ -86,14 +95,13 @@ li a {
 }
 
 .button-row {
-	padding-top: 60px;
-	padding-bottom: 25px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	width: 100%;
 	align-content: center;
 }
 
 .button-row a {
-	/* background-color: #001B31; */
 	background-color: #001B31;
 	color: white;
 	margin: 30px;

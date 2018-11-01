@@ -9,10 +9,10 @@
     <meta name="author" content="E-EEAC">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>E-EEAC Website - Research</title>
+    <title>E-EEAC Website - Home</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="./bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="./bootstrap-3.3.7/docs/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -31,38 +31,73 @@
   </head>
 
   <body>
-    <!-- header that should stay constant throughout all pages -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+  <!-- header that should stay constant throughout all pages -->
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-collapse collapse">
         <ul>
           <a class="navbar-brand" href="#">E-EEAC</a>
-          <li><a class="btn btn-lg" href="Contact.html" role="button">Contact Us</a></li>
-          <li><a class="btn btn-lg" href="CommitteeMembers.html" role="button">Committee Members</a></li>
-          <li><a class="btn btn-lg" href="Research.html" role="button">Research</a></li>
-          <li><a class="btn btn-lg" href="index.html" role="button">Home</a></li>
+          <li><a class="btn btn-lg" href={{ url_for('contact' )}}  role="button">Contact Us</a></li>
+          <!-- drop down boxes don't work >:( 1. could be problem with script tags at bottom -->
+          <li>
+            <div class="dropdown">
+              <a href="#" type="button" class="dropdown-toggle btn btn-lg" date-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+                <ul class="dropdown-menu">
+                  <li><a href={{ url_for('executiveBoard' )}} role="button">Executive Board</a></li>
+                  <li><a href={{ url_for('reviewCommittees' )}} role="button">Review Committees</a></li>
+                </ul>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+                <a href="#" type="button" class="dropdown-toggle btn btn-lg" date-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Policy and Procedures</a>
+                <ul class="dropdown-menu">
+                  <li><a href={{ url_for('disclosure' )}} role="button">Disclosure</a></li>
+                  <li><a href={{ url_for('structure' )}} role="button">Structure</a></li>
+                </ul>
+            </div>
+          </li>
+          <li><a class="btn btn-lg" href={{ url_for('reports' )}}  role="button">Reports</a></li>
+          <li><a class="btn btn-lg" href={{ url_for('home' )}}  role="button">Home</a></li>
         </ul>
     </nav>
 
     <div class="jumbotronOther">
-        <h1>EXECUTIVE BOARD</h1>
-        <hr>
+        <h1>EXECUTIVE COMMITTEE</h1>
+    <hr>
+    </div>
+    
+    <div class="mainPage">
+    <div class="containerOther">
+          <h3 style="align-self: center;">
+              "The EC is a standing committee whose composition reflects a broad
+              range of research areas within the field of environmental economics."<br><br>
+          </h3>
+        <p>
+            These areas may include: air, benefit cost analysis, climate change, energy, enforcement and compliance, health, waste, water, valuation.
+            <br><br>
+            The purpose of the EC is to identify proposed rules, other regulatory changes, and EPA
+            products (e.g., guidelines, methodologies, documents) for review by the EEAC. The EC also
+            identifies Review Committee chair or chairs who will be charged with populating the RCs.
+            Where appropriate, a member of the EC may serve in this capacity or as a member of a RC.
+            Any EC member can make a motion to initiate an RC review and/or to appoint RC chair(s).
+            The EC also facilitates dissemination of RC reviews and coordinates communications with
+            EPA staff, other federal agency staff as well as with affiliated groups as necessary.
+            <br><br>
+            Each member of the EC serves 3-year term of service. The EC convenes via phone, video, or
+            in person at least quarterly. The EC nominates a chair or co-chairs who are responsible for
+            convening quarterly meetings. EC chair(s) serve in that capacity for one year with the
+            possibility of renewal for a second year.
+            <br><br>
+       </p>
     </div>
 
-    <div class="container">
-        <script>
-            /* server-side handling of the list of members? in a JSON array or smth? or I guess it's small enough to hardcode
-            also idk if the code below is correct yet*/
-            var memberList='';
-            for (var i=1; i<=11; i++) {
-                memberList+='<div id="member">'+member[i]+'</div>';
-            }
-            //if we go w/ this id=member todo: styling
-            document.getElementByClass('container').innerHTML+= memberList;
-        </script>
-        <hr>
+    <div class="bios"> 
+      
+    </div>
 
-      <footer>
-        <p>&copy; External Environmental Economics Advisory Board</p>
-      </footer>
+    <hr>
+        <footer>
+        <p>External Environmental Economics Advisory Board</p>
+        </footer>
     </div>
 
 
@@ -71,7 +106,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="./bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="../../../bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
