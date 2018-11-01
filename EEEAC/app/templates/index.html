@@ -32,43 +32,43 @@
 
   <body>
   <!-- header that should stay constant throughout all pages -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-collapse collapse">
         <ul>
           <a class="navbar-brand" href="#">E-EEAC</a>
           <li><a class="btn btn-lg" href={{ url_for('contact' )}}  role="button">Contact Us</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" date-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us</a>
-              <ul class="dropdown-menu">
-                <li><a href= {{ url_for('executiveBoard' )}} role="button">Executive Board</a></li>
-                <li><a class="dropdown-item" href= {{ url_for('reviewCommittees' )}} role="button">Review Committee</a></li>
-              </ul>
+          <!-- drop down boxes don't work >:( 1. could be problem with script tags at bottom -->
+          <li>
+            <div class="dropdown">
+              <a href="#" type="button" class="dropdown-toggle btn btn-lg" date-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+                <ul class="dropdown-menu">
+                  <li><a href={{ url_for('executiveBoard' )}} role="button">Executive Board</a></li>
+                  <li><a href={{ url_for('reviewCommittees' )}} role="button">Review Committees</a></li>
+                </ul>
+            </div>
           </li>
-          <li class="dropdown">
-              <a href="#" class="dropdown-toggle" date-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Policy and Procedures</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href= {{ url_for('disclosure' )}} role="button">Disclosure</a></li>
-                <li><a class="dropdown-item" href= {{ url_for('structure' )}} role="button">Structure</a></li>
-              </ul>
+          <li>
+            <div class="dropdown">
+                <a href="#" type="button" class="dropdown-toggle btn btn-lg" date-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Policy and Procedures</a>
+                <ul class="dropdown-menu">
+                  <li><a href={{ url_for('disclosure' )}} role="button">Disclosure</a></li>
+                  <li><a href={{ url_for('structure' )}} role="button">Structure</a></li>
+                </ul>
+            </div>
           </li>
           <li><a class="btn btn-lg" href={{ url_for('reports' )}}  role="button">Reports</a></li>
           <li><a class="btn btn-lg" href={{ url_for('home' )}}  role="button">Home</a></li>
         </ul>
     </nav>
 
-    <!--
-       <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-    -->
+
+    <div class="dropdown">
+      <a href="#" type="button" class="dropdown-toggle btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        a dropdown
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">dropdown item 1</a></li>
+      </ul>
+    </div>
 
     <div class="mainPage">
     <div class="jumbotron">
@@ -90,8 +90,8 @@
 
         <div class="button-row text-center">
             <div class="row">
-              <a class="btn btn-secondary" href="Research.html" role="button">RESEARCH</a>
-              <a class="btn btn-secondary" href="#" role="button">REVIEW BOARD</a>
+              <a class="btn btn-secondary" href="Research.html" role="button">REPORTS</a>
+              <a class="btn btn-secondary" href="#" role="button">REVIEW COMMITTEES</a>
               <a class="btn btn-secondary" href="Contact.html" role="button">CONTACT US</a>
             </div>
         </div>
@@ -108,7 +108,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="./bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="../../../bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
