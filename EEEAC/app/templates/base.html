@@ -12,12 +12,9 @@
     <title>E-EEAC Website - {{ title }}</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../../bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href={{url_for('static', filename='bootstrap.min.css')}} rel="stylesheet">
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="./bootstrap-3.3.7/docs/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
-    <link href="E-EEAC.css" rel="stylesheet">
+    <link href={{url_for('EEEAC.css')}} rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
