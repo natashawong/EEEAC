@@ -11,11 +11,10 @@
 
     <title>E-EEAC Website - {{ title }}</title>
 
-    <!-- Bootstrap core CSS
-    <link href="{{url_for('static', filename='bootstrap.min.css')}}" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
 
-    <link href="{{url_for('static', filename='EEEAC.css')}}" rel="stylesheet">-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link href="{{url_for('static', filename='E-EEAC.css')}}" rel="stylesheet">
 
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -31,6 +30,7 @@
 
   <body>
   <!-- header that should stay constant throughout all pages -->
+  {{ navbar }}
     <nav class="navbar navbar-inverse navbar-fixed-top navbar-collapse collapse">
         <ul>
           <a class="navbar-brand" href="#">E-EEAC</a>
@@ -58,8 +58,10 @@
           <li><a class="btn btn-lg" href="{{ url_for('home' ) }}"  role="button">Home</a></li>
         </ul>
     </nav>
+  {{ endnavbar }}
 
-    {% block content %}{% endblock %}
+    {% block content %}
+    {% endblock %}
 
     <hr>
         <footer>
