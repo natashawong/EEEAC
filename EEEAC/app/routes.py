@@ -16,20 +16,15 @@ def home():
 # %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*
 
 tempAddData = []
-@app.route('/about')
-def about():
-    title = {'title': 'About'}
-    return render_template('about.html')
-
 @app.route('/ExecutiveBoard')
 def executiveBoard(name):
     title = {'title': 'Executive Board'}
-    return redirect(url_for('executiveBoard.html'))
+    return redirect(url_for('executiveboard.html'))
 
 @app.route('/ReviewCommittees')
 def reviewCommittees(name):
     title = {'title': 'Review Committees'}
-    return redirect(url_for('reviewCommittees.html'))
+    return redirect(url_for('reviewcommittees.html'))
 
 @app.route('/Disclosure')
 def disclosure(name):
@@ -48,7 +43,7 @@ def structure(name):
 @app.route('/Contact')
 def contact():
     title = {'title': 'Contact Us'}
-    return redirect(url_for('Contact.html'))
+    return redirect(url_for('contact.html'))
 
 # %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*
 # %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%           REPORTS          %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%
