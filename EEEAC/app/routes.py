@@ -19,22 +19,22 @@ tempAddData = []
 @app.route('/ExecutiveBoard')
 def executiveBoard(name, title):
     title = {'title': 'Executive Board'}
-    return render_template('executiveboard.html')
+    return render_template('executiveBoard.html'))
 
 @app.route('/ReviewCommittees')
 def reviewCommittees(name, title):
     title = {'title': 'Review Committees'}
-    return render_template('reviewcommittees.html')
+    return render_template('reviewCommittees.html'))
 
 @app.route('/Disclosure')
 def disclosure(name, title):
     title = {'title': 'Disclosure'}
-    return render_template('disclosure.html')
+    return render_template('disclosure.html'))
 
 @app.route('/Structure')
 def structure(name, title):
     title = {'title': 'Structure'}
-    return render_template('structure.html')
+    return render_template('structure.html'))
 
 # %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*
 # %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%           CONTACT US          %*%*%*%*%*%*%*%*%*%*%*%*%*%*
@@ -43,7 +43,7 @@ def structure(name, title):
 @app.route('/Contact')
 def contact(title):
     title = {'title': 'Contact Us'}
-    return render_template('contact.html')
+    return render_template('Contact.html'))
 
 # %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*
 # %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%           REPORTS          %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%
@@ -52,10 +52,8 @@ def contact(title):
 @app.route('/Reports')
 def reports(title):
     title = {'title': 'Reports'}
-    return render_template('reports.html')
+    return render_template('reports.html'))
 
 # %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*
 # %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%           LOGIN          %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%
 # %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*
-
-
