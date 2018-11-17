@@ -7,9 +7,8 @@ from .forms import SearchForm, AddForm
 # %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%
 
 @app.route('/')
-def home():
-    title = {'title': 'Home'}
-    return render_template('index.html')
+def home(title="Home"):
+    return render_template('index.html', title=title)
 
 # %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*
 # %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%           ABOUT US          %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*
@@ -17,42 +16,36 @@ def home():
 
 tempAddData = []
 @app.route('/ExecutiveBoard')
-def executiveBoard(name, title):
-    title = {'title': 'Executive Board'}
-    return render_template('executiveBoard.html'))
+def executiveBoard(title="Executive Board"):
+    return render_template('executiveBoard.html', title=title)
 
 @app.route('/ReviewCommittees')
-def reviewCommittees(name, title):
-    title = {'title': 'Review Committees'}
-    return render_template('reviewCommittees.html'))
+def reviewCommittees(title="Review Committees"):
+    return render_template('reviewCommittees.html', title=title)
 
 @app.route('/Disclosure')
-def disclosure(name, title):
-    title = {'title': 'Disclosure'}
-    return render_template('disclosure.html'))
+def disclosure(title="Disclosure"):
+    return render_template('disclosure.html', title=title)
 
 @app.route('/Structure')
-def structure(name, title):
-    title = {'title': 'Structure'}
-    return render_template('structure.html'))
+def structure(title="Structure"):
+    return render_template('structure.html', title=title)
 
 # %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*
 # %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%           CONTACT US          %*%*%*%*%*%*%*%*%*%*%*%*%*%*
 # %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*
 
 @app.route('/Contact')
-def contact(title):
-    title = {'title': 'Contact Us'}
-    return render_template('Contact.html'))
+def contact(title="Contact"):
+    return render_template('Contact.html', title=title)
 
 # %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*
 # %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%           REPORTS          %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%
 # %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*
 
 @app.route('/Reports')
-def reports(title):
-    title = {'title': 'Reports'}
-    return render_template('reports.html'))
+def reports(title="Reports"):
+    return render_template('reports.html', title=title)
 
 # %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*
 # %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%           LOGIN          %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%

@@ -1,12 +1,12 @@
 @font-face {
 	font-family: latoFont;
-	src: url({{ url_for('static', filename='assets/Lato/Lato-Regular.ttf') }})
+	src: url("{{ url_for('static', filename='assets/Lato/Lato-Regular.ttf') }}")
 
 }
 
 @font-face {
 	font-family: merriweatherFont;
-	src: url({{ url_for('static', filename='assets/Merriweather/Merriweather-Regular.ttf') }})
+	src: url("{{ url_for('static', filename='assets/Merriweather/Merriweather-Regular.ttf') }}")
 }
 
 body {
@@ -27,7 +27,7 @@ body {
 	padding-left: 20px;
 	padding-right: 20px;
 	min-height: 450px;
-	background-image: url({{ url_for('static', filename='assets/bgPic.jpg') }});
+	background-image: url("{{ url_for('static', filename='assets/bgPic.jpg') }}");
 	background-size: cover;
 	background-position: 0%;
 }
@@ -129,4 +129,8 @@ li a {
 .bioImage {
 	max-width: 300px;
 	max-height: 300px;
+}
+
+.footer {
+	font-family: latoFont;
 }
