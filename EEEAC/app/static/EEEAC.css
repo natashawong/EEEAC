@@ -1,12 +1,12 @@
 @font-face {
 	font-family: latoFont;
-	src: url("{{ url_for('static', filename='assets/Lato/Lato-Regular.ttf') }}")
+	src:"{{ url_for('static', filename='assets/Lato/Lato-Regular.ttf') }}";
 
 }
 
 @font-face {
 	font-family: merriweatherFont;
-	src: url("{{ url_for('static', filename='assets/Merriweather/Merriweather-Regular.ttf') }}")
+	src: "{{ url_for('static', filename='assets/Merriweather/Merriweather-Regular.ttf') }}";
 }
 
 body {
@@ -27,7 +27,7 @@ body {
 	padding-left: 20px;
 	padding-right: 20px;
 	min-height: 450px;
-	background-image: url("{{ url_for('static', filename='assets/bgPic.jpg') }}");
+	background-image: url('assets/bgPic.jpg');
 	background-size: cover;
 	background-position: 0%;
 }
@@ -93,6 +93,7 @@ li a {
 	padding-bottom: 50px;
 	width: 100%;
 	align-content: center;
+	align-items: center;
 }
 
 .button-row a {
@@ -102,6 +103,7 @@ li a {
 	border-radius: 0;
 	padding: 20px;
 	font-family: latoFont;
+	align-self: center;
 }
 
 .headerOther {
@@ -131,6 +133,8 @@ li a {
 	max-height: 300px;
 }
 
-.footer {
+footer {
 	font-family: latoFont;
+	padding-left: 20px;
+	padding-right: 20px;
 }
