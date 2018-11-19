@@ -1,4 +1,5 @@
 from app import app
+from app.reports import reportText
 from flask import render_template, redirect, url_for
 from .forms import SearchForm, AddForm
 
@@ -45,7 +46,7 @@ def contact(title="Contact"):
 
 @app.route('/Reports')
 def reports(title="Reports"):
-    return render_template('reports.html', title=title)
+    return render_template('reports.html', title=title, listOfReports=reportText)
 
 # %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*
 # %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%           LOGIN          %*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%
