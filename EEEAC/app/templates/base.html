@@ -27,9 +27,9 @@
 
   <body>
   <!-- header that should stay constant throughout all pages -->
-    <nav class="navbar navbar-inverse navbar-fixed-top navbar-collapse collapse">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <ul>
-          <a class="navbar-brand" href="#">E-EEAC</a>
+          <a class="navbar-brand" href="{{ url_for('home') }}">E-EEAC</a>
           <li><a class="btn btn-lg" href="{{ url_for('contact') }}" role="button">Contact Us</a></li>
           <!-- drop down boxes don't work >:( 1. could be problem with script tags at bottom -->
           <li>
