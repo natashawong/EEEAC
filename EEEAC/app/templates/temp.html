@@ -1,0 +1,27 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <ul>
+      <a class="navbar-brand" href="{{ url_for('home') }}">E-EEAC</a>
+      <li><a class="btn btn-lg" href="{{ url_for('contact') }}" role="button">Contact Us</a></li>
+      <!-- drop down boxes don't work >:( 1. could be problem with script tags at bottom -->
+      <li>
+        <div class="dropdown">
+          <a href="#" type="button" class="dropdown-toggle btn btn-lg" date-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+            <ul class="dropdown-menu">
+              <li><a href="{{ url_for('executiveBoard' ) }}" role="button">Executive Board</a></li>
+              <li><a href="{{ url_for('reviewCommittees') }}" role="button">Review Committees</a></li>
+            </ul>
+        </div>
+      </li>
+      <li>
+        <div class="dropdown">
+            <a href="#" type="button" class="dropdown-toggle btn btn-lg" date-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Policy and Procedures</a>
+            <ul class="dropdown-menu">
+              <li><a href="{{ url_for('disclosure' ) }}" role="button">Disclosure</a></li>
+              <li><a href="{{ url_for('structure' ) }}" role="button">Structure</a></li>
+            </ul>
+        </div>
+      </li>
+      <li><a class="btn btn-lg" href="{{ url_for('reports') }}"  role="button">Reports</a></li>
+      <li><a class="btn btn-lg" href="{{ url_for('home') }}"  role="button">Home</a></li>
+    </ul>
+</nav>
