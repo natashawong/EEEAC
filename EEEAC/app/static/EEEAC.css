@@ -1,12 +1,16 @@
 @font-face {
 	font-family: latoFont;
-	src: url("../static/assets/Lato/Lato-Regular.ttf");
-
+	src: url('../static/assets/Lato/Lato-Regular.ttf');
 }
 
 @font-face {
 	font-family: merriweatherFont;
-	src: url("../static/assets/Merriweather/Merriweather-Regular.ttf");
+	src: url('../static/assets/Merriweather/Merriweather-Regular.ttf');
+}
+
+.top-box {
+	background-color:#E0E0E0;
+	padding-top: 15px;
 }
 
 .large-title-box {
@@ -19,11 +23,10 @@
 	font-family: latoFont;
 	float: left;
 	margin-left: 185px;
-	border-bottom: 1px solid grey;
+	border-bottom: 1px solid #E0E0E0;
 }
 
 body {
-	padding-top: 50px;
 	padding-bottom: 20px;
 }
 
@@ -111,13 +114,13 @@ li a {
 }
 
 .button-row a {
-	background-color: #001B31;
-	color: white;
+	background-color: #E0E0E0;
 	margin: 30px;
 	border-radius: 0;
 	padding: 20px;
 	font-family: latoFont;
 	align-self: center;
+	color: black;
 }
 
 .headerOther {
@@ -149,6 +152,6 @@ li a {
 
 footer {
 	font-family: latoFont;
-	padding-left: 20px;
+	padding-left: 80px;
 	padding-right: 20px;
 }
