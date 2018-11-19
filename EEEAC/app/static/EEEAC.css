@@ -9,6 +9,19 @@
 	src: "{{ url_for('static', filename='assets/Merriweather/Merriweather-Regular.ttf') }}";
 }
 
+.large-title-box {
+	width: 100%;
+	padding-left: 15px;
+	margin-right: 100px;
+}
+
+.large-title {
+	font-family: latoFont;
+	float: left;
+	margin-left: 185px;
+	border-bottom: 1px solid grey;
+}
+
 body {
 	padding-top: 50px;
 	padding-bottom: 20px;
@@ -20,7 +33,11 @@ body {
 }
 
 .navbar {
-	background-color: #001B31
+	background-color: #001B31;
+}
+
+.navbar ul {
+	float: left;
 }
 
 .jumbotron {
