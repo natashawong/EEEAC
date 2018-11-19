@@ -1,12 +1,12 @@
 @font-face {
 	font-family: latoFont;
-	src:"{{ url_for('static', filename='assets/Lato/Lato-Regular.ttf') }}";
+	src: url("../static/assets/Lato/Lato-Regular.ttf");
 
 }
 
 @font-face {
 	font-family: merriweatherFont;
-	src: "{{ url_for('static', filename='assets/Merriweather/Merriweather-Regular.ttf') }}";
+	src: url("../static/assets/Merriweather/Merriweather-Regular.ttf");
 }
 
 .large-title-box {
@@ -74,8 +74,6 @@ body {
 }
 
 .containerOther {
-	padding-left: 20px;
-	padding-right: 20px;
 	font-family: merriweatherFont;
 	width: 100%;
 	align-content: left;
@@ -95,7 +93,7 @@ body {
 
 ul {
 	list-style-type: none;
-	background-color: grey;
+	background-color: white;
 	font-family: latoFont;
 }
 
