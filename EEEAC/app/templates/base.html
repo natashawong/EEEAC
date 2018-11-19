@@ -27,33 +27,43 @@
 
   <body>
   <!-- header that should stay constant throughout all pages -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <ul>
-          <a class="navbar-brand" href="{{ url_for('home') }}">E-EEAC</a>
-          <li><a class="btn btn-lg" href="{{ url_for('contact') }}" role="button">Contact Us</a></li>
-          <!-- drop down boxes don't work >:( 1. could be problem with script tags at bottom -->
-          <li>
-            <div class="dropdown">
-              <a href="#" type="button" class="dropdown-toggle btn btn-lg" date-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
-                <ul class="dropdown-menu">
-                  <li><a href="{{ url_for('executiveBoard' ) }}" role="button">Executive Board</a></li>
-                  <li><a href="{{ url_for('reviewCommittees') }}" role="button">Review Committees</a></li>
-                </ul>
-            </div>
-          </li>
-          <li>
-            <div class="dropdown">
-                <a href="#" type="button" class="dropdown-toggle btn btn-lg" date-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Policy and Procedures</a>
-                <ul class="dropdown-menu">
-                  <li><a href="{{ url_for('disclosure' ) }}" role="button">Disclosure</a></li>
-                  <li><a href="{{ url_for('structure' ) }}" role="button">Structure</a></li>
-                </ul>
-            </div>
-          </li>
-          <li><a class="btn btn-lg" href="{{ url_for('reports') }}"  role="button">Reports</a></li>
-          <li><a class="btn btn-lg" href="{{ url_for('home') }}"  role="button">Home</a></li>
-        </ul>
-    </nav>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<a class="navbar-brand" href="{{ url_for("home") }}">E-EEAC</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="{{ url_for('reports') }}">Reports</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        About Us
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="{{ url_for('executiveBoard' ) }}">Executive Board</a>
+        <a class="dropdown-item" href="{{ url_for('reviewCommittees') }}">Review Committees</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Policy and Procedures
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="{{ url_for('disclosure' ) }}">Disclosures</a>
+        <a class="dropdown-item" href="{{ url_for('structure' ) }}">Structure</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </li>
+  </ul>
+</div>
+</nav>
 
     {% block content %}
     {% endblock %}
