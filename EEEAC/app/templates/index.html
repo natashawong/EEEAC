@@ -4,7 +4,7 @@
 
 {% block content %}
     <div class="mainPage">
-      <div class="jumbotron">
+      <div class="jumbotron animated fadeInUp" style="animation-delay: 1s;">
           <h1>Lorem ipsum dolores</h1>
       </div>
 
@@ -21,10 +21,12 @@
         </div>
       </div>
 
-      <div class="button-row text-center center-block">
-            <a class="btn btn-secondary" href="{{url_for('reports') }}" role="button">REPORTS</a>
-            <a class="btn btn-secondary" href="{{url_for('reviewCommittees')}}" role="button">REVIEW COMMITTEES</a>
-            <a class="btn btn-secondary" href="{{url_for('contact')}}" role="button">CONTACT US</a>
+<!-- This is acting weird. needs to be revised
+      <div class="button-row text-center">
+            <a class="btn btn-rounded" href="{{url_for('reports') }}" role="button">REPORTS</a>
+            <a class="btn btn-rounded" href="{{url_for('reviewCommittees')}}" role="button">REVIEW COMMITTEES</a>
+            <a class="btn btn-rounded" href="{{url_for('contact')}}" role="button">CONTACT US</a>
       </div>
+      -->
     </div>
 {% endblock %}
