@@ -51,6 +51,7 @@ body {
 	background-image: url('assets/bgPic.jpg');
 	background-size: cover;
 	background-position: 0%;
+	position: fixed;
 }
 
 .jumbotronOther {
@@ -127,31 +128,27 @@ li a {
 	padding-bottom: 15px;
 }
 
-.bigBioContainer {
-	display: grid;
-	grid-template-columns: auto auto auto;
-	grid-gap: 30px;
-	padding: 10px;
-	align-content: center;
-	padding-bottom: 50px;
+.bioImage {
+	max-width: 500px;
+	max-height: 450px;
 }
 
-.individualBioContainer {
+.bios {
 	display: grid;
-    grid-template-rows: auto auto;
-    grid-gap: 15px;
+	grid-template-rows: auto auto;
+	grid-gap: 15px;
 	padding: 10px;
 	align-content: center;
 	text-align: center;
-}
-
-.bioImage {
-	max-width: 300px;
-	max-height: 300px;
 }
 
 footer {
 	font-family: latoFont;
 	padding-left: 80px;
 	padding-right: 20px;
+}
+
+.bioDesc {
+	width: 750px; 
+	padding: 20px;
 }

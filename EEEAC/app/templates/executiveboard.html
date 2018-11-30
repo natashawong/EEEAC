@@ -4,14 +4,14 @@
 
 {% block content %}
 <div class="mainPage animated fadeIn">
-<div class="containerOther">
+<div class="containerOther" style="padding-bottom:0">
   <div class="jumbotronOther">
           <h1>EXECUTIVE COMMITTEE</h1>
           <hr>
   </div>
-  <h4 class="headerOther">
+  <h3 class="headerOther">
       "The EC is a standing committee whose composition reflects a broad range of research areas within the field of environmental economics."
-  </h4>
+  </h3>
   <p>
       These areas may include: air, benefit cost analysis, climate change, energy, enforcement and compliance, health, waste, water, valuation.
       <br><br>
@@ -29,13 +29,13 @@
       possibility of renewal for a second year.
       <br><br>
   </p>
-
 </div>
 
-<div class="bigBioContainer"> <!-- 3, 3, 2 setup -->
-  <div class="individualBioContainer">
-    <div><img class="bioImage" src="{{ url_for('static', filename='assets/headshots/Burtraw.jpg') }}"/></div>
-    <div>
+<!-- 1 by 2 setup -->
+<div class="col" style="margin: 60px;">
+  <div class="row">
+    <div><img class="bioImage" src="{{ url_for('static', filename='assets/headshots/Burtraw.jpg') }}" style="margin-top: 80px;"/></div>
+    <div style="width: 750px; padding: 40px; text-align: justify">
       <h6>
         Dallas Burtraw
       </h6>
@@ -44,20 +44,20 @@
       </p>
     </div>
   </div>
-  <div class="individualBioContainer">
-      <div><img class="bioImage" src="{{ url_for('static', filename='assets/headshots/Evans.jpg') }}"/></div>
-      <div>
-        <h6>
-          Mary F. Evans
-        </h6>
-        <p>
-          Mary F. Evans is the Jerrine and Thomas Mitchell ‘66 Associate Professor of Environmental Economics and George R. Roberts Fellow in the Robert Day School of Economics and Finance at Claremont McKenna College. Her research in environmental economics has examined how individual characteristics, in particular age, health status, and family structure, affect the willingness to pay for reductions in mortality risks associated with improved environmental quality. She also explores issues related to the enforcement of and compliance with environmental regulations. Her research has been published in the Review of Economics and Statistics, the Journal of Public Economics, the Journal of the Association of Environmental and Resource Economists, the Journal of Environmental Economics and Management, among other journals. She received the 2016 Ralph C. d'Arge and Allen V. Kneese Award for Outstanding Publication in the Journal of the Association of Environmental and Resource Economists for her paper "The Clean Air Act Watch List: An Enforcement and Compliance Natural Experiment." Evans is a member of the board for the Association of Environmental and Resource Economists (AERE). She is a co-editor for the Journal of the Association of Environmental and Resource Economists and a member of the editorial council for the Journal of Environmental Economics and Management.
-        </p>
-      </div>
+  <div class="row">
+  <div><img class="bioImage" src="{{ url_for('static', filename='assets/headshots/Evans.jpg') }}" style="margin-top: 80px;"/></div>
+    <div style="width: 750px; padding: 40px; text-align: justify">
+      <h6>
+        Mary F. Evans
+      </h6>
+      <p>
+        Mary F. Evans is the Jerrine and Thomas Mitchell ‘66 Associate Professor of Environmental Economics and George R. Roberts Fellow in the Robert Day School of Economics and Finance at Claremont McKenna College. Her research in environmental economics has examined how individual characteristics, in particular age, health status, and family structure, affect the willingness to pay for reductions in mortality risks associated with improved environmental quality. She also explores issues related to the enforcement of and compliance with environmental regulations. Her research has been published in the Review of Economics and Statistics, the Journal of Public Economics, the Journal of the Association of Environmental and Resource Economists, the Journal of Environmental Economics and Management, among other journals. She received the 2016 Ralph C. d'Arge and Allen V. Kneese Award for Outstanding Publication in the Journal of the Association of Environmental and Resource Economists for her paper "The Clean Air Act Watch List: An Enforcement and Compliance Natural Experiment." Evans is a member of the board for the Association of Environmental and Resource Economists (AERE). She is a co-editor for the Journal of the Association of Environmental and Resource Economists and a member of the editorial council for the Journal of Environmental Economics and Management.
+      </p>
+    </div>
   </div>
-  <div class="individualBioContainer">
-      <div><img class="bioImage" src="{{ url_for('static', filename='assets/headshots/Fowlie.jpg') }}"/></div>
-      <div>
+  <div class="row">
+    <div><img class="bioImage" src="{{ url_for('static', filename='assets/headshots/Fowlie.jpg') }}" style="margin-top: 80px;"/></div>
+      <div style="width: 750px; padding: 40px; text-align: justify">
         <h6>
           Meredith Fowlie
         </h6>
@@ -66,9 +66,9 @@
         </p>
       </div>
   </div>
-  <div class="individualBioContainer">
-      <div><img class="bioImage" src="{{ url_for('static', filename='assets/headshots/Gilingham.jpg') }}"/></div>
-      <div>
+  <div class="row">
+      <div><img class="bioImage" src="{{ url_for('static', filename='assets/headshots/Gilingham.jpg') }}" style="margin-top: 80px;"/></div>
+      <div style="width: 750px; padding: 40px; text-align: justify">
           <h6>
             Kenneth Gilingham
           </h6>
@@ -77,9 +77,9 @@
           </p>
       </div>
   </div>
-  <div class="individualBioContainer">
-      <div><img class="bioImage" src="{{ url_for('static', filename='assets/headshots/Johnson.jpg') }}"/></div>
-      <div>
+  <div class="row">
+      <div><img class="bioImage" src="{{ url_for('static', filename='assets/headshots/JohnsonFinal.jpeg') }}" style="margin-top: 80px;"/></div>
+      <div style="width: 750px; padding: 40px; text-align: justify">
         <h6>
           F. Reed Johnson, PhD
         </h6>
@@ -88,9 +88,9 @@
         </p>
       </div>
   </div>
-  <div class="individualBioContainer">
-      <div><img class="bioImage" src="{{ url_for('static', filename='assets/headshots/Kotchen.jpg') }}"/></div>
-      <div>
+  <div class="row">
+      <div><img class="bioImage" src="{{ url_for('static', filename='assets/headshots/Kotchen.jpg') }}" style="margin-top: 80px;"/></div>
+      <div style="width: 750px; padding: 40px; text-align: justify">
         <h6>
           Matthew Kotchen
         </h6>
@@ -99,9 +99,9 @@
         </p>
       </div>
   </div>
-  <div class="individualBioContainer">
-      <div><img class="bioImage" src="{{ url_for('static', filename='assets/headshots/Stavins.jpg') }}"/></div>
-      <div>
+  <div class="row">
+      <div><img class="bioImage" src="{{ url_for('static', filename='assets/headshots/Stavins.jpg') }}" style="margin-top: 80px;"/></div>
+      <div style="width: 750px; padding: 40px; text-align: justify">
         <h6>
           Robert N. Stavins
         </h6>
@@ -110,9 +110,9 @@
         </p>
       </div>
   </div>
-  <div class="individualBioContainer">
-      <div><img class="bioImage" src="{{ url_for('static', filename='assets/headshots/Smith.jpg') }}"/></div>
-      <div>
+  <div class="row">
+    <div><img class="bioImage" src="{{ url_for('static', filename='assets/headshots/Smith.jpg') }}" style="margin-top: 60px;"/></div>
+      <div style="width: 750px; padding: 40px; text-align: justify">
         <h6>
           V. Kerry Smith
         </h6>
